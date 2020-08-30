@@ -1,0 +1,9 @@
+.btn {
+    text-align: center;
+    text-decoration: none;
+    background: $buttonPrimaryBackground; 
+    color: $buttonPrimaryTextColor;
+    padding: $buttonPadding;
+    border-radius: $buttonBorderRadius;
+    box-shadow: $boxShadow;
+}

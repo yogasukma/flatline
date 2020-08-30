@@ -1,0 +1,29 @@
+extends ../layouts/master.pug
+
+block content
+    header#page-title
+        div.content
+            h2 Table
+            p it's basic table to show numerous data
+        div.actions
+            a(href="#").btn Add new record
+
+    section#content
+        .responsive-table
+            table
+
+                thead
+                    tr
+                        th No
+                        th Name
+                        th Username
+                        th Email
+                        th &nbsp;
+
+                tbody
+                    tr
+                        td No
+                        td Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        td Username
+                        td Email
+                        td &nbsp;

@@ -1,12 +1,38 @@
+$primary: #706fd3;
 $dark: #333;
 $light: #F7FAFB;
 $white: #fff;
+$purple: #40407a;
 
 $bodyBackground: $light;
+$bodyFontSize: 0.8rem;
 
+$boxShadow: 0 2px 10px #eee;
+
+$topNavbarFontSize: $bodyFontSize;
+$topNavbarBrandTransform: uppercase;
 $topNavbarBackground : $white;
 $topNavbarPadding: 10px 5%;
-$topNavbarBrandTransform: uppercase;
-$topNavbarFontSize: 0.8rem;
-
+$topNavbarBorderBottom: none;
 $topNavbarDropdownBackground : $white;
+
+$brandFontSize: 1rem;
+$brandTextTransform: uppercase;
+
+$pageHeaderFontSize: 2rem;
+$pageHeaderTextFontSize: 1rem;
+
+$tableHeadingBackgroundColor: $purple;
+$tableHeadingFontSize: $bodyFontSize;
+$tableHeadingTextColor: $white;
+$tableHeadingBorderBottom: 2px solid $primary;
+$tableHeadingPadding: 10px 15px;
+
+$tableDataPadding: $tableHeadingPadding;
+$tableDataBorderBottom: 1px solid #ccc;
+$tableDataBackgroundColor: $white;
+
+$buttonPadding: 10px;
+$buttonBorderRadius: 3px;
+$buttonPrimaryBackground: $primary;
+$buttonPrimaryTextColor: $white;

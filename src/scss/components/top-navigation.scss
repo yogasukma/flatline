@@ -1,6 +1,8 @@
 .top-navigation {
     background-color: $topNavbarBackground;
     padding: $topNavbarPadding;
+    border-bottom: $topNavbarBorderBottom;
+    box-shadow: $boxShadow;
 
     .mobile {
         display: flex;
@@ -38,11 +40,12 @@
     }
 
     .brand {
+        display: none;
         text-decoration: none;
         font-weight: 700;
         color: $dark;
-        text-transform: $topNavbarBrandTransform;
-        display: none
+        text-transform: $brandTextTransform;
+        font-size: $brandFontSize;
     }
 
     @media(min-width: 960px) {
@@ -72,7 +75,7 @@
         .navs {
             padding-left: 10px;
             position: relative;
-            top: 2px;
+            top: 5px;
             margin: 0;
             flex-grow: 2;
             .item {
@@ -88,7 +91,7 @@
         margin: 30px 0 0;
 
         .item.profile{
-            font-size: 0.8rem;
+            font-size: $topNavbarFontSize;
             strong{
                 display: block;
                 margin-bottom: 2px;

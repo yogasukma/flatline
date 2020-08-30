@@ -1,0 +1,37 @@
+@media(max-width: 960px) {
+    .responsive-table {
+        overflow-x: scroll;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: $boxShadow;
+
+    th {
+        text-align: left;
+        padding: $tableHeadingPadding;
+        background-color: $tableHeadingBackgroundColor;
+        color: $tableHeadingTextColor;
+        border-bottom: $tableHeadingBorderBottom;
+        font-size: $tableHeadingFontSize;
+    }
+
+    td {
+        padding: $tableDataPadding;
+        border-bottom: $tableDataBorderBottom;
+        background-color: $tableDataBackgroundColor;
+    }
+
+    tr:last-child {
+        td {
+            border: none
+        }
+    }
+}
+
+@media(min-width: 960px) {
+    table {
+        width: 100%;
+    }
+}
