@@ -6,4 +6,10 @@
     padding: $buttonPadding;
     border-radius: $buttonBorderRadius;
     box-shadow: $boxShadow;
+
+    &.link {
+        background-color: transparent;
+        box-shadow: none;
+        color: $dark;
+    }
 }

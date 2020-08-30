@@ -35,10 +35,10 @@
   <section id="main">
     <header id="page-title">
       <div class="content">
-        <h2>Table</h2>
-        <p>it's basic table to show numerous data</p>
+        <h2>Users</h2>
+        <p>list of users</p>
       </div>
-      <div class="actions"><a class="btn" href="#">Add new record</a></div>
+      <div class="actions"><a class="btn open-modal" href="#modal-form">Add new user </a></div>
     </header>
     <section id="content">
       <div class="responsive-table">
@@ -64,6 +64,37 @@
         </table>
       </div>
     </section>
+    <div class="modal" id="modal-form">
+      <header>
+        <h3>Add new user</h3>
+      </header>
+      <div class="content">
+        <form>
+          <div class="field">
+            <label>Name</label>
+            <input type="text"/>
+          </div>
+          <div class="field">
+            <label>Username </label>
+            <input type="text"/>
+          </div>
+          <div class="field">
+            <label>Password </label>
+            <input type="password"/>
+          </div>
+          <div class="field">
+            <label>Type </label>
+            <select>
+              <option value="administrator">Administrator</option>
+              <option value="user">Regular user</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <footer><a class="close-modal btn link" href="#modal-form">close</a>
+        <input class="btn" type="submit" value="save"/>
+      </footer>
+    </div>
   </section>
   <script src="js/app.min.js"></script>
 </body>

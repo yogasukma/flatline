@@ -3,6 +3,7 @@ $dark: #333;
 $light: #F7FAFB;
 $white: #fff;
 $purple: #40407a;
+$green: #33d9b2;
 
 $bodyBackground: $light;
 $bodyFontSize: 0.8rem;
@@ -19,8 +20,8 @@ $topNavbarDropdownBackground : $white;
 $brandFontSize: 1rem;
 $brandTextTransform: uppercase;
 
-$pageHeaderFontSize: 2rem;
-$pageHeaderTextFontSize: 1rem;
+$pageHeaderFontSize: 1rem;
+$pageHeaderTextFontSize: 0.8rem;
 
 $tableHeadingBackgroundColor: $purple;
 $tableHeadingFontSize: $bodyFontSize;
@@ -34,5 +35,15 @@ $tableDataBackgroundColor: $white;
 
 $buttonPadding: 10px;
 $buttonBorderRadius: 3px;
-$buttonPrimaryBackground: $primary;
+$buttonPrimaryBackground: $green;
 $buttonPrimaryTextColor: $white;
+
+$modalBackdropShadow: rgba(0,0,0,0.3);
+$modalPadding: 15px;
+$modalWidth: 50%;
+$modalBorderRadius: 3px;
+$modalHeaderBackgroundColor: $purple;
+$modalHeaderBorderBottom: 2px solid $primary;
+$modalHeaderTextColor: $white;
+$modalContentBackground: $white;
+$modalFooterBackground: $white;

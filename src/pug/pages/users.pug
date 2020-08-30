@@ -1,0 +1,57 @@
+extends ../layouts/master.pug
+
+block content
+    header#page-title
+        div.content
+            h2 Users
+            p list of users
+        div.actions
+            a(href="#modal-form").btn.open-modal Add new user 
+
+    section#content
+        .responsive-table
+            table
+
+                thead
+                    tr
+                        th No
+                        th Name
+                        th Username
+                        th Email
+                        th &nbsp;
+
+                tbody
+                    tr
+                        td No
+                        td Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        td Username
+                        td Email
+                        td &nbsp;
+    
+    #modal-form.modal
+        header
+            h3 Add new user
+
+        .content
+            form
+                div.field
+                    label Name
+                    input(type='text')
+
+                div.field
+                    label Username 
+                    input(type='text')
+
+                div.field
+                    label Password 
+                    input(type='password')
+
+                div.field
+                    label Type 
+                    select
+                        option(value="administrator") Administrator
+                        option(value="user") Regular user
+        
+        footer
+            a(href="#modal-form").close-modal.btn.link close
+            input(type='submit' value='save').btn

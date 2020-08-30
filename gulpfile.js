@@ -24,6 +24,7 @@ function css() {
 
 function js() {
     return src([
+        "node_modules/jquery/dist/jquery.js",
         srcDir + "/js/app.js",
     ], {sourcemaps: true})
         .pipe(concat('app.min.js'))
