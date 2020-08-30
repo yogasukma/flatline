@@ -1,30 +1,64 @@
 .top-navigation {
     background-color: $topNavbarBackground;
     padding: $topNavbarPadding;
-    display: flex;
+
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+
+        .brand {
+            display: inline-block;
+        }
+
+        .hamburger {
+            div {
+                background: $dark;
+                height: 3px;
+                width: 20px;
+                margin: 2px;;
+            }
+        }
+    }
+
+    @media(min-width: 960px) {
+        .mobile {
+            display: none;
+        }
+    }
+
+    .content {
+        display: none;
+    }
+
+    @media(min-width: 960px) {
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
     .brand {
         text-decoration: none;
         font-weight: 700;
         color: $dark;
         text-transform: $topNavbarBrandTransform;
-        position: relative;
-        top: 3px;
+        display: none
+    }
+
+    @media(min-width: 960px) {
+        .brand {
+            display: inline;
+            position: relative;
+            top: 3px;
+        }
     }
 
     .navs {
         list-style: none;
         display: inline;
-        padding-left: 10px;
-        position: relative;
-        top: 2px;
-        margin: 0;
-        flex-grow: 2;
 
         .item {
-            display: inline-block;
-            padding: 0 10px;
-
+            padding: 10px 0;
             .link {
                 text-decoration: none;
                 color: $dark;
@@ -34,12 +68,24 @@
         }
     }
 
+    @media(min-width: 960px) {
+        .navs {
+            padding-left: 10px;
+            position: relative;
+            top: 2px;
+            margin: 0;
+            flex-grow: 2;
+            .item {
+                padding: 0 10px;
+                display: inline-block;
+            }
+        }
+    }
+
     .shortcuts {
         list-style: none;
-        display: inline;
         padding-left: 0px;
-        margin: 0;
-
+        margin: 30px 0 0;
 
         .item.profile{
             font-size: 0.8rem;
@@ -53,25 +99,37 @@
         }
     }
 
+    @media(min-width: 960px) {
+        .shortcuts {
+            margin: 0;
+        }
+    }
+
     .has-dropdown:hover .dropdown {
         display: block;
     }
 
     .dropdown {
-        position: absolute;
+        display: none;
         background-color: $topNavbarDropdownBackground;
         list-style: none;
-        padding: 20px 50px 10px 10px;
-        display: none;
+        padding-left: 0;
         li {
             display: block;
-            padding: 10px;
+            padding: 10px 0;
             a {
                 text-transform: $topNavbarBrandTransform;
                 color: $dark;
                 text-decoration: none;
                 font-size: $topNavbarFontSize;
             }
+        }
+    }
+
+    @media(min-width: 960px) {
+        .dropdown {
+            position: absolute;
+            padding: 20px 50px 10px 10px;
         }
     }
 }

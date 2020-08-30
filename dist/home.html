@@ -2,24 +2,34 @@
 <head>
   <title>flatline</title>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
   <header>
-    <nav class="top-navigation"><a class="brand" href="#">Dashboard</a>
-      <ul class="navs">
-        <li class="item"><a class="link" href="#">Home</a></li>
-        <li class="item"><a class="link" href="#">Page 2 </a></li>
-        <li class="item"><a class="link" href="#">Page 3 </a></li>
-        <li class="item"><a class="link" href="#">Page 4 </a></li>
-      </ul>
-      <ul class="shortcuts">
-        <li class="item profile has-dropdown"><strong>John Doe</strong><span>administrator</span>
-          <ul class="dropdown">
-            <li><a href="#">profile</a></li>
-            <li><a href="#">logout</a></li>
-          </ul>
-        </li>
-      </ul>
+    <nav class="top-navigation">
+      <div class="mobile"> <a class="brand" href="#">Dashboard</a>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="content"><a class="brand" href="#">Dashboard</a>
+        <ul class="navs">
+          <li class="item"><a class="link" href="#">Home</a></li>
+          <li class="item"><a class="link" href="#">Page 2 </a></li>
+          <li class="item"><a class="link" href="#">Page 3 </a></li>
+          <li class="item"><a class="link" href="#">Page 4 </a></li>
+        </ul>
+        <ul class="shortcuts">
+          <li class="item profile has-dropdown"><strong>John Doe</strong><span>administrator</span>
+            <ul class="dropdown">
+              <li><a href="#">profile</a></li>
+              <li><a href="#">logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 </body>
