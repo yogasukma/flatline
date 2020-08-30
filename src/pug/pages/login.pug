@@ -1,0 +1,24 @@
+extends ../layouts/single.pug
+
+block content
+    header#logo
+        a(href="#").brand Dashboard
+
+    section#content
+        header
+            strong Insert your username and password to login
+
+        .content
+            form
+                div.field
+                    label Username 
+                    input(type='text')
+
+                div.field
+                    label Password 
+                    input(type='password')
+
+
+                div.field
+                    input(type='submit' value='Login').btn.block
+        

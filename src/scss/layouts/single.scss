@@ -1,0 +1,40 @@
+.single {
+    #main {
+        width: 90%;
+        margin: auto;
+        padding: 60px 0 0;
+    }
+
+    @media(min-width: 960px) {
+        #main {
+            width: $singleLayoutMainWidth;
+            padding: $singleLayoutMainPadding;
+        }
+    }
+
+    header#logo {
+        text-align: center;
+
+        .brand {
+            text-decoration: none;
+            font-size: $singleLayoutBrandSize;
+            font-weight: bold;
+            color: $singleLayoutBrandColor;
+        }
+    }
+
+    section#content {
+        box-shadow: $boxShadow;
+        header {
+            background-color: $singleLayoutContentHeaderBackgroundColor;
+            border-bottom: $singleLayoutContentHeaderBorder;
+            padding: $singleLayoutContentHeaderPadding;
+            color: $singleLayoutContentHeaderTextColor;
+            text-align: center;
+        }
+        .content {
+            background: $singleLayoutContentBackgroundColor;
+            padding: $singleLayoutContentPadding;
+        }
+    }
+}

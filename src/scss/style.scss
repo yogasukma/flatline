@@ -8,13 +8,9 @@ body {
     margin: 0;
 }
 
-section#main {
-    margin: 20px 5%;
-}
-
-section#content {
-    margin-top: 30px;
-}
+/* layouts */
+@import "layouts/master";
+@import "layouts/single";
 
 /* elements */
 @import "elements/button";

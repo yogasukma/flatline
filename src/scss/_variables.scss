@@ -10,6 +10,18 @@ $bodyFontSize: 0.8rem;
 
 $boxShadow: 0 2px 10px #eee;
 
+$singleLayoutMainWidth: 30%;
+$singleLayoutMainPadding: 150px 0 0;
+$singleLayoutBrandSize: 1.5rem;
+$singleLayoutBrandColor: $dark;
+
+$singleLayoutContentHeaderBackgroundColor: $purple;
+$singleLayoutContentHeaderBorder: 5px solid $primary;
+$singleLayoutContentHeaderTextColor: $white;
+$singleLayoutContentHeaderPadding: 15px;
+$singleLayoutContentBackgroundColor: $white;
+$singleLayoutContentPadding: 20px;
+
 $topNavbarFontSize: $bodyFontSize;
 $topNavbarBrandTransform: uppercase;
 $topNavbarBackground : $white;

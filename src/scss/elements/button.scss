@@ -12,4 +12,8 @@
         box-shadow: none;
         color: $dark;
     }
+
+    &.block {
+        width: 100%;
+    }
 }
