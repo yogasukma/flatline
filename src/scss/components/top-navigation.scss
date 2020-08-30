@@ -1,0 +1,77 @@
+.top-navigation {
+    background-color: $topNavbarBackground;
+    padding: $topNavbarPadding;
+    display: flex;
+
+    .brand {
+        text-decoration: none;
+        font-weight: 700;
+        color: $dark;
+        text-transform: $topNavbarBrandTransform;
+        position: relative;
+        top: 3px;
+    }
+
+    .navs {
+        list-style: none;
+        display: inline;
+        padding-left: 10px;
+        position: relative;
+        top: 2px;
+        margin: 0;
+        flex-grow: 2;
+
+        .item {
+            display: inline-block;
+            padding: 0 10px;
+
+            .link {
+                text-decoration: none;
+                color: $dark;
+                text-transform: $topNavbarBrandTransform;
+                font-size: $topNavbarFontSize;
+            }
+        }
+    }
+
+    .shortcuts {
+        list-style: none;
+        display: inline;
+        padding-left: 0px;
+        margin: 0;
+
+
+        .item.profile{
+            font-size: 0.8rem;
+            strong{
+                display: block;
+                margin-bottom: 2px;
+            }
+            span{
+                color: #ccc;
+            }
+        }
+    }
+
+    .has-dropdown:hover .dropdown {
+        display: block;
+    }
+
+    .dropdown {
+        position: absolute;
+        background-color: $topNavbarDropdownBackground;
+        list-style: none;
+        padding: 20px 50px 10px 10px;
+        display: none;
+        li {
+            display: block;
+            padding: 10px;
+            a {
+                text-transform: $topNavbarBrandTransform;
+                color: $dark;
+                text-decoration: none;
+                font-size: $topNavbarFontSize;
+            }
+        }
+    }
+}
